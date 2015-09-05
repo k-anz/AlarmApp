@@ -1,0 +1,39 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="アラーム設定">
+
+        <SwitchPreference
+            android:key="@string/pref_enabled_key"
+            android:title="アラーム"
+            android:summary="" />
+
+        <RingtonePreference
+            android:key="@string/pref_bell_key"
+            android:title="アラーム音"
+            android:ringtoneType="all"
+            android:showDefault="true"
+            android:showSilent="true" />
+
+    <!--</PreferenceCategory>-->
+
+    <!--<PreferenceCategory-->
+        <!--android:title="ダイアログベースプレファレンス">-->
+
+        <com.k_anz__.alarmapp.TimePickerPreference
+            android:key="@string/pref_time_key"
+            android:title="時間"
+            android:ringtoneType="all"
+            android:showDefault="true"
+            android:showSilent="true" />
+
+        <!--<EditTextPreference-->
+            <!--android:key="@string/pref_time_key"-->
+            <!--android:title="アラームの時間"-->
+            <!--android:summary="エディットテキスト"-->
+            <!--android:dialogTitle="アラームの時間を設定(秒単位)" />-->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
